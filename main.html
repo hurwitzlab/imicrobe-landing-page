@@ -11,15 +11,32 @@
     <title>iMicrobe</title>
 
     <link href="./plugins/landing-page/css/main.css" rel="stylesheet">
-</head>
 
-<body>
-    <!-- Kludge to remove padding under navbar -->
     <style>
+    /* These styles are embedded here to render faster to prevent page flicker */
+    @keyframes fadeIn{
+        0% {
+            opacity:0;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn .5s ease forwards;
+    }
+
+    /* Kludge to remove padding under navbar */
     .navbar-static-top {
         margin: 0;
     }
     </style>
+</head>
+
+<body>
+
+<div class="fade-in">
 
     <!-- Header -->
     <a name="about"></a>
@@ -129,6 +146,8 @@
             </div>
         </div>
     </footer>
+
+</div>
 
 </body>
 
