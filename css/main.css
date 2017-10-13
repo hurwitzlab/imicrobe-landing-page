@@ -37,11 +37,13 @@
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.intro-header button {
+.intro-header .btn {
     background: orange;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 @media(max-width:767px) {
@@ -109,6 +111,14 @@
 .banner-social-buttons {
     float: right;
     margin-top: 0;
+}
+
+.icon-bullet {
+    font-size: 2.75em;
+    color: gray;
+    border-radius: 50%;
+    border: 6px solid gray;
+    padding: 10px;
 }
 
 @media(max-width:1199px) {
